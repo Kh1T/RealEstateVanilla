@@ -1,0 +1,20 @@
+[
+  {
+    "location": "New York",
+    "sale": 500000,
+    "rent": 2500,
+    "image": "images/ny.jpg"
+  },
+  {
+    "location": "Los Angeles",
+    "sale": 750000,
+    "rent": 3200,
+    "image": "images/la.jpg"
+  },
+  {
+    "location": "Chicago",
+    "sale": 400000,
+    "rent": 1800,
+    "image": "images/chicago.jpg"
+  }
+]

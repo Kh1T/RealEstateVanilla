@@ -5,19 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
     <script src="./components/fiveCards.js"></script>
 </head>
 <body>
-    <div class="container" style="display: block; max-width: 1200px; margin: 0 auto; ">
-        <div>
-            <h3>Featured New Developments</h3>
-            <five-cards src="./data/sectionOne.json"></five-cards>
-        </div>
-        <div>
-            <h3>Featured New Developments</h3>
-            <five-cards src="./data/sectionOne.json"></five-cards>
-        </div>
+    <div class="sticky-action-bar">
+        <button class="action-btn"><img src="./assets/icons/search.svg" alt="Search"></button>
+        <button class="action-btn"><img src="./assets/icons/phone.svg" alt="Call"></button>
+        <button class="action-btn">APP</button>
+        <button class="action-btn"><img src="./assets/icons/car.svg" alt="Car"></button>
+        <button class="action-btn"><img src="./assets/icons/user.svg" alt="User"></button>
+        <button class="action-btn"><img src="./assets/icons/link.svg" alt="Link"></button>
+        <button class="action-btn"><img src="./assets/icons/arrow-up.svg" alt="Up"></button>
     </div>
+    <main class="container" style="display: block; max-width: 1200px; margin: 0 auto; ">
+        <div id="carousel-container"></div>
+        <div>
+            <h3>Popular Location</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+        <div>
+            <h3>Featured New Developments</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+        <div>
+            <h3>Featured Serviced Apartments</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+        <div>
+            <h3>Featured Boreys</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+        <div>
+            <h3>Latest Properties for Sale</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+        <div>
+            <h3>Properties for Sale Under Market Value</h3>
+            <five-cards src="./data/sectionOne.json"></five-cards>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    
+    <script src="./components/carousel.js"></script>
+
 </body>
 
 </html>
