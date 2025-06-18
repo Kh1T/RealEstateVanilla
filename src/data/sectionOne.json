@@ -1,9 +1,21 @@
 [
   {
     "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
+    "title": "City Apartment",
+    "price_from": "$950",
+    "location": "Singapore"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
     "title": "Modern Loft",
     "price_from": "$1,200",
-    "location": "Bangkok"
+    "location": "Jakarta"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
+    "title": "City Apartment",
+    "price_from": "$950",
+    "location": "Singapore"
   },
   {
     "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
@@ -15,7 +27,7 @@
     "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
     "title": "Modern Loft",
     "price_from": "$1,200",
-    "location": "Bangkok"
+    "location": "Jakarta"
   },
   {
     "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",

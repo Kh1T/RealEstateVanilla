@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/carousel.css">
     <script src="./components/fiveCards.js"></script>
+    <script src="./components/stickyActionBar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/fiveVideos.js"></script>
 </head>
 <body>
     <div class="sticky-action-bar">
@@ -18,9 +21,12 @@
         <button class="action-btn"><img src="./assets/icons/link.svg" alt="Link"></button>
         <button class="action-btn"><img src="./assets/icons/arrow-up.svg" alt="Up"></button>
     </div>
-    <main class="container" style="display: block; max-width: 1200px; margin: 0 auto; ">
+
+    <main class="container" style="display: block; max-width: 1280px;  margin: 0 auto; padding: 20px;">
         <div id="carousel-container"></div>
-        <div>
+        
+        <five-videos src="./data/knowCambodia.json"></five-videos>
+        <div >
             <h3>Popular Location</h3>
             <five-cards src="./data/sectionOne.json"></five-cards>
         </div>
@@ -45,13 +51,7 @@
             <five-cards src="./data/sectionOne.json"></five-cards>
         </div>
     </main>
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
-        </div>
-    </footer>
-
-    
+    <footer-compo></footer-compo> 
     
     <script src="./components/carousel.js"></script>
 

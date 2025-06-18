@@ -7,8 +7,8 @@ class FiveCards extends HTMLElement {
     .five-cards-container {
       display: flex;
       gap: 20px;
-      justify-content: flex-start;
-      margin: 32px 0;
+      justify-content: space-between;
+      margin: 16px 0;
       flex-wrap: wrap;
     }
     .five-card {
@@ -16,13 +16,16 @@ class FiveCards extends HTMLElement {
       border: 1px solid #e0e0e0;
       border-radius: 4px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-      width: 260px;
+      width: 224px;
       padding: 0 0 16px 0;
       text-align: left;
       display: flex;
       flex-direction: column;
       transition: box-shadow 0.2s;
       overflow: hidden;
+    }
+    .five-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.5);
     }
     .five-card img {
       width: 100%;
