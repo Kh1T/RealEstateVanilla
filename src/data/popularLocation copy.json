@@ -1,0 +1,26 @@
+[
+  {
+    "location": "New York",
+    "sale": 500000,
+    "rent": 2500,
+    "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b"
+  },
+  {
+    "location": "Los Angeles",
+    "sale": 750000,
+    "rent": 3200,
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+  },
+  {
+    "location": "Chicago",
+    "sale": 400000,
+    "rent": 1800,
+    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca"
+  },
+  {
+    "location": "Chicago",
+    "sale": 400000,
+    "rent": 1800,
+    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca"
+  }
+]
