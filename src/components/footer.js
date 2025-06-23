@@ -1,6 +1,5 @@
 class FooterCompo extends HTMLElement {
     connectedCallback() {
-        const year = new Date().getFullYear();
         this.innerHTML = `
             <style>
                
@@ -9,9 +8,7 @@ class FooterCompo extends HTMLElement {
                 <div class="footer-main">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <img src="https://www.realestate.com.kh/img/logo-white-green.svg" alt="realestate.com.kh logo" />
-                            <span class="logo-text">realestate<span style="color:#b6e04a;">.com.kh</span></span>
-                            <span class="logo-sub">ខ្មែរ | 中文 | Khmer | Chinese</span>
+                            <img src="https://www.realestate.com.kh/static/img/logo-reverse.svg" alt="realestate.com.kh logo" />
                         </div>
                         <div class="footer-contact">
                             <div><span class="icon">📍</span> #306BCD, Monivong Blvd (93) Sangkat Chakto Mukh, Khan Doun Penh, Phnom Penh 12302</div>

@@ -13,12 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background: olive;
+    background: rgb(32, 60, 62);
     padding: 16px 8px;
 }
 
 .action-btn {
-    background: #4caf50;
+    background: rgb(141, 202, 63);
     border: none;
     border-radius: 50%;
     width: 48px;
@@ -43,7 +43,7 @@ body {
 
 /* Footer css */
 .footer-compo-root {
-    background: #36383d;
+    background: rgb(47, 50, 57);
     color: #fff;
     padding: 32px 0 16px 0;
     font-family: Arial, sans-serif;
@@ -60,8 +60,11 @@ body {
 }
 .footer-left {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 16px;
+    flex: 1;
+    min-width: 260px;
 }
 .footer-logo {
     display: flex;
@@ -84,8 +87,8 @@ body {
     opacity: 0.8;
 }
 .footer-contact {
-    margin-left: 16px;
-    font-size: 1em;
+    margin-top: 12px;
+    font-size: 12px;
 }
 .footer-contact div {
     margin-bottom: 6px;
@@ -101,10 +104,11 @@ body {
     flex-direction: column;
     align-items: flex-end;
     flex: 1;
+    min-width: 200px;
 }
 .footer-links {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     margin-bottom: 8px;
     font-size: 1em;
 }
@@ -125,13 +129,12 @@ body {
     color: #fff;
     opacity: 0.85;
     display: flex;
-    gap: 16px;
+    gap: 8px;
     flex-wrap: wrap;
 }
 .footer-partners a {
     color: #fff;
     text-decoration: none;
-    margin-right: 8px;
     opacity: 0.85;
 }
 .footer-partners a:hover {
@@ -147,5 +150,9 @@ body {
     .footer-nav {
         align-items: flex-start;
         margin-top: 24px;
+    }
+    .footer-left, .footer-nav {
+        min-width: 0;
+        width: 100%;
     }
 }
