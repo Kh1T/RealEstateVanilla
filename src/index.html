@@ -1,62 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href=".//styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
     <script src="./components/fiveCards.js"></script>
     <script src="./components/stickyActionBar.js"></script>
     <script src="./components/footer.js"></script>
     <script src="./components/fiveVideos.js"></script>
-    <script src="./components/sticky.js"></script>
-</head>
-<body>
-    
-    <sticky-bar></sticky-bar>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+     <heade  r class="header">
+      <!-- Top Bar -->
+      <div class="container top-bar">
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
+        </div>
+        <div class="contact-info">
+          <div class="app-select">
+            <i class="fas fa-mobile-alt mobile-icon"></i>
+            <select class="select">
+              <option value="en">APP</option>
+              <option value="en">Appstore</option>
+              <option value="kh">Google Play</option>
+            </select>
+          </div>
+          <span class="phone-number">+855 61 777 090</span>
+          <select class="select">
+            <option value="en">🇬🇧</option>
+            <option value="kh">🇰🇭</option>
+          </select>
+        </div>
+      </div>
 
-    <main class="container" style="display: block; max-width: 1280px;  margin: 0 auto; padding: 20px;">
-        <div id="carousel-container"></div>
+      <!-- Main Nav -->
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="https://www.realestate.com.kh/static/img/logo.svg"
+            alt="Logo"
+            height="32px"
+          />
+          <!-- <span class="logo-text">realestate.com.kh</span> -->
+        </div>
+        <nav class="nav-links">
+          <a href="#" class="nav-item">Buy</a>
+          <a href="#" class="nav-item">Rent</a>
+          <a href="#" class="nav-item">New Developments</a>
+          <a href="#" class="nav-item">Condo</a>
+          <a href="#" class="nav-item">Borey</a>
+          <a href="#" class="nav-item">Land</a>
+          <a href="#" class="nav-item">Commercial</a>
+          <a href="#" class="nav-item">News</a>
+          <a href="#" class="nav-item">More</a>
+        </nav>
+        <div class="auth-buttons">
+          <a href="#" class="auth-link">Login</a>
+          <a href="#" class="auth-link">Register</a>
+          <button class="add-property">+ Add Property</button>
+        </div>
+      </div>
+    </header>
+    <div class="sticky-action-bar">
+      <button class="action-btn">
+        <img src="./assets/icons/search.svg" alt="Search" />
+      </button>
+      <button class="action-btn">
+        <img src="./assets/icons/phone.svg" alt="Call" />
+      </button>
+      <button class="action-btn">APP</button>
+      <button class="action-btn">
+        <img src="./assets/icons/car.svg" alt="Car" />
+      </button>
+      <button class="action-btn">
+        <img src="./assets/icons/user.svg" alt="User" />
+      </button>
+      <button class="action-btn">
+        <img src="./assets/icons/link.svg" alt="Link" />
+      </button>
+      <button class="action-btn">
+        <img src="./assets/icons/arrow-up.svg" alt="Up" />
+      </button>
+    </div>
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="container banner-content">
+        <div class="banner-image">
+          <img src="./asset/img/website-hero-banner-ads-mobile-320-x-176-eng.png" alt="">
+        </div>
         
-        <five-videos src="./data/knowCambodia.json"></five-videos>
-        <div>
-            <h3>Popular Location</h3>
-            <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div class="container search-bar">
+        <div class="search-box">
+          <div class="search-form">
+            <h3 class="search-title">Find Cambodia Real Estate</h3>
+            <div class="search-buttons">
+              <button class="search-btn active">Buy</button>
+              <button class="search-btn">Rent</button>
+              <button class="search-btn">Sell</button>
+              <input
+                type="text"
+                placeholder="Location, project or agency name"
+                class="search-input"
+              />
+              <button class="search-submit" type="submit">submit</button>
+            </div>
+          </div>
         </div>
-        <div>
-            <h3>Featured New Developments</h3>
-            <five-cards src="./data/sectionTwo.json"></five-cards>
-        </div>
-        <div>
-            <h3>Featured Serviced Apartments</h3>
-            <five-cards src="./data/sectionThree.json"></five-cards>
-        </div>
-        <div>
-            <h3>Featured Boreys</h3>
-            <five-cards src="./data/sectionFour.json"></five-cards>
-        </div>
-        <div>
-            <h3>Latest Properties for Sale</h3>
-            <five-cards src="./data/sectionFive.json"></five-cards>
-        </div>
-        <div>
-            <h3>Properties for Sale Under Market Value</h3>
-            <five-cards src="./data/sectionSix.json"></five-cards>
-        </div>
-        <div>
-            <h3>Hot Properties</h3>
-            <five-videos src="./data/sectionSeven.json"></five-videos>
-        </div>
-        <div>
-            <h3>Luxury Listings</h3>
-            <five-videos src="./data/sectionEight.json"></five-videos>
-        </div>
+      </div>
+    </section>
+
+    <main
+      class="container"
+      style="display: block; max-width: 1280px; margin: 0 auto; padding: 20px"
+    >
+      <div id="carousel-container"></div>
+
+      <five-videos src="./data/knowCambodia.json"></five-videos>
+      <div>
+        <h3>Popular Location</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div>
+        <h3>Featured New Developments</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div>
+        <h3>Featured Serviced Apartments</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div>
+        <h3>Featured Boreys</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div>
+        <h3>Latest Properties for Sale</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
+      <div>
+        <h3>Properties for Sale Under Market Value</h3>
+        <five-cards src="./data/sectionOne.json"></five-cards>
+      </div>
     </main>
-    <footer-compo></footer-compo> 
-    
+    <footer-compo></footer-compo>
+
     <script src="./components/carousel.js"></script>
-
-</body>
-
+  </body>
 </html>
