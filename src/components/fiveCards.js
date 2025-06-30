@@ -99,13 +99,24 @@ class FiveCards extends HTMLElement {
     }
     const container = this.shadowRoot.querySelector('.five-cards-container');
     container.innerHTML = data.slice(0, 5).map(card => `
-      <div class="five-card">
+      <div class="five-card" tabindex="0" style="cursor:pointer;">
         <img src="${card.image}" alt="${card.title}">
         <div class="five-card-title">${card.title}</div>
         <div class="five-card-price">From ${card.price_from}</div>
         <div class="five-card-location">${card.location}</div>
       </div>
     `).join('');
+    // Add click event to each card
+    Array.from(container.querySelectorAll('.five-card')).forEach(cardEl => {
+      cardEl.addEventListener('click', () => {
+        window.location.href = './pages/Postdetail.html';
+      });
+      cardEl.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          window.location.href = './pages/Postdetail.html';
+        }
+      });
+    });
   }
 
   defaultCards() {
