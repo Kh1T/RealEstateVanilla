@@ -84,29 +84,26 @@ class FiveVideos extends HTMLElement {
       data = this.defaultVideos();
     }
     const container = this.shadowRoot.querySelector('.five-videos-container');
-    container.innerHTML = data.slice(0, 5).map(video => `
-      <div class="five-video">
-        <iframe src="https://www.youtube.com/embed/${this.extractVideoId(video.youtube_url)}" allowfullscreen></iframe>
-        <div class="five-video-title">${video.title}</div>
-        <div class="five-video-description">${video.description}</div>
-      </div>
-    `).join('');
+    container.innerHTML = data.slice(0, 5).map(video => {
+      const maxDescLength = 100;
+      let desc = video.content || '';
+      if (desc.length > maxDescLength) {
+        desc = desc.slice(0, maxDescLength) + '...';
+      }
+      return `
+        <div class="five-video">
+          <iframe src="https://www.youtube.com/embed/${this.extractVideoId(video.youtube_url)}" allowfullscreen></iframe>
+          <div class="five-video-title">${video.title}</div>
+          <div class="five-video-description">${desc}</div>
+        </div>
+      `;
+    }).join('');
   }
 
   extractVideoId(url) {
     const regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
     return (match && match[2].length === 11) ? match[2] : '';
-  }
-
-  defaultVideos() {
-    return [
-      { youtube_url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', title: 'Video 1', description: 'Description 1' },
-      { youtube_url: 'https://www.youtube.com/watch?v=3JZ_D3ELwOQ', title: 'Video 2', description: 'Description 2' },
-      { youtube_url: 'https://www.youtube.com/watch?v=l482T0yNkeo', title: 'Video 3', description: 'Description 3' },
-      { youtube_url: 'https://www.youtube.com/watch?v=V-_O7nl0Ii0', title: 'Video 4', description: 'Description 4' },
-      { youtube_url: 'https://www.youtube.com/watch?v=2Vv-BfVoq4g', title: 'Video 5', description: 'Description 5' }
-    ];
   }
 }
 
