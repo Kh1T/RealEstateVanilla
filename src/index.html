@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/carousel.css" />
     <script src="./components/fiveCards.js"></script>
-    <script src="./components/stickyActionBar.js"></script>
+    <script src="./components/sticky.js"></script>
     <script src="./components/footer.js"></script>
     <script src="./components/fiveVideos.js"></script>
      <link
@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-     <heade  r class="header">
+     <header class="header">
       <!-- Top Bar -->
       <div class="container top-bar">
         <div class="social-links">
@@ -75,27 +75,9 @@
         </div>
       </div>
     </header>
-    <div class="sticky-action-bar">
-      <button class="action-btn">
-        <img src="./assets/icons/search.svg" alt="Search" />
-      </button>
-      <button class="action-btn">
-        <img src="./assets/icons/phone.svg" alt="Call" />
-      </button>
-      <button class="action-btn">APP</button>
-      <button class="action-btn">
-        <img src="./assets/icons/car.svg" alt="Car" />
-      </button>
-      <button class="action-btn">
-        <img src="./assets/icons/user.svg" alt="User" />
-      </button>
-      <button class="action-btn">
-        <img src="./assets/icons/link.svg" alt="Link" />
-      </button>
-      <button class="action-btn">
-        <img src="./assets/icons/arrow-up.svg" alt="Up" />
-      </button>
-    </div>
+
+    <sticky-bar></sticky-bar>
+
     <!-- Banner Section -->
     <section class="banner">
       <div class="container banner-content">
@@ -126,35 +108,44 @@
 
     <main
       class="container"
-      style="display: block; max-width: 1280px; margin: 0 auto; padding: 20px"
-    >
+      style="display: block; max-width: 1280px; margin: 0 auto; padding: 20px">
       <div id="carousel-container"></div>
-
-      <five-videos src="./data/knowCambodia.json"></five-videos>
       <div>
         <h3>Popular Location</h3>
         <five-cards src="./data/sectionOne.json"></five-cards>
       </div>
       <div>
         <h3>Featured New Developments</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionTwo.json"></five-cards>
       </div>
       <div>
         <h3>Featured Serviced Apartments</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionThree.json"></five-cards>
       </div>
       <div>
         <h3>Featured Boreys</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionFour.json"></five-cards>
       </div>
       <div>
         <h3>Latest Properties for Sale</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionFive.json"></five-cards>
       </div>
       <div>
         <h3>Properties for Sale Under Market Value</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionSix.json"></five-cards>
       </div>
+      <div>
+        <h3>Latest Properties for Rent</h3>
+        <five-videos src="./data/sectionSeven.json"></five-videos>
+        </div>
+        <div>
+            <h3>Serviced apartments for rent</h3>
+            <five-videos src="./data/sectionEight.json"></five-videos>
+        </div>
+        <div>
+            <h3>Villas for sale and rent</h3>
+            <five-videos src="./data/sectionNine.json"></five-videos>
+        </div>
     </main>
     <footer-compo></footer-compo>
 

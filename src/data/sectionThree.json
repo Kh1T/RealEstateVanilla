@@ -1,36 +1,36 @@
 [
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
+    "image": "https://images.realestate.com.kh/__sized__/listings/2023-01/cm-thumbnail-400x300-70.jpg",
+    "title": "Central Mansions Serviced Apartments",
+    "price_from": "$1,600",
+    "location": "Wat Phnom, Daun Penh, Phnom Penh"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/listings/2024-02/edited-photo_2024-01-30_14-54-13-thumbnail-400x300-70.jpeg",
+    "title": "Richardsons Serviced Apartment",
+    "price_from": "$750",
+    "location": "BKK 1, Chamkarmon, Phnom Penh"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/listings/2022-07/p1400669-thumbnail-400x300-70.jpeg",
+    "title": "Aura Condominium",
     "price_from": "$950",
-    "location": "Singapore"
+    "location": "Boeng Reang, Daun Penh, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "Modern Loft",
-    "price_from": "$1,200",
-    "location": "Jakarta"
+    "image": "https://images.realestate.com.kh/__sized__/listings/2022-08/img_0845-thumbnail-400x300-70.jpeg",
+    "title": "Luxcity Hotel & Apartment",
+    "price_from": "$1,250",
+    "location": "Mittapheap, 7 Makara, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
+    "image": "https://images.realestate.com.kh/__sized__/listings/2023-06/p1577001-thumbnail-400x300-70.jpeg",
+    "title": "L’attrait Boeung Keng Kang",
+    "price_from": "$650",
+    "location": "BKK 1, Chamkarmon, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
-  },
-  {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "Modern Loft",
-    "price_from": "$1,200",
-    "location": "Jakarta"
-  },
-  {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
+    "image": "https://images.realestate.com.kh/__sized__/listings/2023-06/p1577001-thumbnail-400x300-70.jpeg",
     "title": "City Apartment",
     "price_from": "$950",
     "location": "Singapore"
