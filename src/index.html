@@ -11,74 +11,20 @@
     <script src="./components/sticky.js"></script>
     <script src="./components/footer.js"></script>
     <script src="./components/fiveVideos.js"></script>
-     <link
+    <script src="./components/header.js"></script>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-     <header class="header">
-      <!-- Top Bar -->
-      <div class="container top-bar">
-        <div class="social-links">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"
-            ><i class="fab fa-telegram-plane"></i
-          ></a>
-        </div>
-        <div class="contact-info">
-          <div class="app-select">
-            <i class="fas fa-mobile-alt mobile-icon"></i>
-            <select class="select">
-              <option value="en">APP</option>
-              <option value="en">Appstore</option>
-              <option value="kh">Google Play</option>
-            </select>
-          </div>
-          <span class="phone-number">+855 61 777 090</span>
-          <select class="select">
-            <option value="en">🇬🇧</option>
-            <option value="kh">🇰🇭</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Main Nav -->
-      <div class="nav-container">
-        <div class="logo">
-          <img
-            src="https://www.realestate.com.kh/static/img/logo.svg"
-            alt="Logo"
-            height="32px"
-          />
-          <!-- <span class="logo-text">realestate.com.kh</span> -->
-        </div>
-        <nav class="nav-links">
-          <a href="#" class="nav-item">Buy</a>
-          <a href="#" class="nav-item">Rent</a>
-          <a href="#" class="nav-item">New Developments</a>
-          <a href="#" class="nav-item">Condo</a>
-          <a href="#" class="nav-item">Borey</a>
-          <a href="#" class="nav-item">Land</a>
-          <a href="#" class="nav-item">Commercial</a>
-          <a href="#" class="nav-item">News</a>
-          <a href="#" class="nav-item">More</a>
-        </nav>
-        <div class="auth-buttons">
-          <a href="#" class="auth-link">Login</a>
-          <a href="#" class="auth-link">Register</a>
-          <button class="add-property">+ Add Property</button>
-        </div>
-      </div>
-    </header>
+    
+    <header-nav></header-nav>
 
     <sticky-bar></sticky-bar>
 
@@ -92,22 +38,26 @@
       </div>
       <div class="container search-bar">
         <div class="search-box">
-          <div class="search-form">
-            <h3 class="search-title">Find Cambodia Real Estate</h3>
-            <div class="search-buttons">
-              <button class="search-btn active">Buy</button>
-              <button class="search-btn">Rent</button>
-              <button class="search-btn">Sell</button>
-              <input
-                type="text"
-                placeholder="Location, project or agency name"
-                class="search-input"
-              />
-              <button class="search-submit" type="submit">submit</button>
-            </div>
+          <h3 class="search-title">Find Cambodia Real Estate</h3>
+          <div class="search-toggle-group">
+            <button class="search-toggle active">Buy</button>
+            <button class="search-toggle">Rent</button>
+            <button class="search-toggle">Sell</button>
           </div>
+          <form class="search-form">
+            <span class="search-icon">
+              <i class="fas fa-bars"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Location, project or agency name"
+              class="search-input"
+            />
+          <button class="search-submit" type="submit"></button>
+          </form>
         </div>
       </div>
+
     </section>
 
     <main
