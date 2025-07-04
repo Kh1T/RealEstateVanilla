@@ -1,21 +1,21 @@
-.nav-container {
-  background-color: #ffffff;
-
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  width: auto;
-}
 .header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
-body {
-  font-family: sans-serif;
+
+.nav-container {
+  background-color: #ffffff;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
@@ -72,16 +72,6 @@ body {
 
 .phone-number:hover {
   color: #111827;
-}
-
-.nav-container {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 16px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -286,51 +276,118 @@ nav {
 }
 
 .search-section {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 5px;
+  background: none;
+  padding: 0;
+  border-radius: 0;
   text-align: center;
-  width: 40%;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .search-section h3 {
-  margin: 0 0 10px;
-  font-size: 1.2em;
+  margin: 0 0 24px;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
 }
 
 .search-options {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 0;
+  overflow: hidden;
+  background: none;
+  border: none;
+  gap: 0;
 }
 
 .search-options button {
   flex: 1;
-  padding: 10px;
+  padding: 12px 0;
   border: none;
-  background-color: #34495e;
-  color: white;
+  background: #11272d;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-right: 1px solid #fff;
+}
+
+.search-options button:last-child {
+  border-right: none;
 }
 
 .search-options button.active {
-  background-color: #2ecc71;
+  background: #8fd143;
+  color: #fff;
 }
 
-.search-options button:hover {
-  background-color: #2c3e50;
+.search-options button:hover:not(.active) {
+  background: #22343a;
+}
+
+.search-bar-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.search-bar-icon {
+  padding: 0 16px;
+  color: #222;
+  font-size: 1.3em;
 }
 
 .search-bar {
-  width: 100%;
-  padding: 10px;
-  font-size: 1em;
+  flex: 1;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  padding: 16px 12px;
+  font-size: 1.1em;
+  outline: none;
+  background: none;
+  color: #222;
+}
+
+.search-bar:focus {
+  background: #f7fafc;
+}
+
+.search-bar-btn {
+  background: #8fd143;
+  border: none;
+  color: #fff;
+  padding: 0 24px;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-btn:hover {
+  background: #7ab82e;
 }
 
 .concierge {
-  font-size: 0.9em;
-  color: #2ecc71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1em;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.concierge-icon {
+  color: #8fd143;
+  font-size: 1.4em;
 }
