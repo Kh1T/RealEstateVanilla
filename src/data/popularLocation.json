@@ -1,26 +1,38 @@
 [
   {
-    "location": "New York",
-    "sale": 500000,
-    "rent": 2500,
-    "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b"
+    "location": "Phnom Penh",
+    "sale": 50,
+    "rent": 25,
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/phnom-penh_tTVbMtj-thumbnail-400x300-70.jpg"
   },
   {
-    "location": "Los Angeles",
-    "sale": 750000,
-    "rent": 3200,
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+    "location": "Chamkarmon",
+    "sale": 75,
+    "rent": 32,
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70621-pm-thumbnail-400x300.png"
   },
   {
-    "location": "Chicago",
-    "sale": 400000,
-    "rent": 1800,
-    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca"
+    "location": "Daun Penh",
+    "sale": 80,
+    "rent": 45,
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70902-pm-thumbnail-400x300.png"
   },
   {
-    "location": "Chicago",
-    "sale": 400000,
-    "rent": 1800,
-    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca"
+    "location": "BKK 1",
+    "sale": 90,
+    "rent": 55,
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71238-pm-thumbnail-400x300.png"
+  },
+  {
+    "location": "Russian Market",
+    "sale": 60,
+    "rent": 35,
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71657-pm-thumbnail-400x300.png"
+  },
+  {
+    "location": "Kampot",
+    "sale": 70,
+    "rent": 40,
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/kampot_XPGpurc-thumbnail-400x300-70.jpg"
   }
 ]
