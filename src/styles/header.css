@@ -74,6 +74,16 @@ body {
   color: #111827;
 }
 
+.nav-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .logo {
   display: flex;
   align-items: center;

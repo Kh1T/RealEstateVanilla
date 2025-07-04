@@ -1,0 +1,614 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+            .container1 {
+                display: flex;
+                max-width: 1200px;
+            }
+
+            .big-pic {
+                flex: 2;
+                margin-right: 10px;
+            }
+
+            .small-pics {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .small-pics img,
+            .big-pic img {
+                width: 100%;
+                display: block;
+            }
+
+            .map {
+                margin-top: 20px;
+                height: 300px;
+                background: #ddd;
+                text-align: center;
+                line-height: 300px;
+                color: #555;
+                font-size: 1.2em;
+            }
+
+            footer {
+                text-align: center;
+                margin: 40px 0;
+                color: #666;
+                font-size: 0.9em;
+            }
+            .dropdown-menu {
+        position: absolute !important;
+        z-index: 9999 !important;
+        }
+
+    </style>
+</head>
+
+<body style="background-color:azure;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 ">
+                <a href="https://facebook.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M17,1H3C1.9,1,1,1.9,1,3v14c0,1.101,0.9,2,2,2h7v-7H8V9.525h2V7.475c0-2.164,1.212-3.684,3.766-3.684l1.803,0.002v2.605h-1.197C13.378,6.398,13,7.144,13,7.836v1.69h2.568L15,12h-2v7h4c1.1,0,2-0.899,2-2V3C19,1.9,18.1,1,17,1z">
+                        </path>
+                    </svg> </a>
+                <a href="https://youtube.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M10,2.3C0.172,2.3,0,3.174,0,10s0.172,7.7,10,7.7s10-0.874,10-7.7S19.828,2.3,10,2.3z M13.205,10.334l-4.49,2.096C8.322,12.612,8,12.408,8,11.974V8.026C8,7.593,8.322,7.388,8.715,7.57l4.49,2.096C13.598,9.85,13.598,10.15,13.205,10.334z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://In.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M5,3c0,1.1-0.7,2-2,2C1.8,5,1,4.1,1,3.1C1,2,1.8,1,3,1S5,1.9,5,3z M1,19h4V6H1V19z M14.6,6.2c-2.1,0-3.3,1.2-3.8,2h-0.1l-0.2-1.7H6.9C6.9,7.6,7,8.9,7,10.4V19h4v-7.1c0-0.4,0-0.7,0.1-1c0.3-0.7,0.8-1.6,1.9-1.6c1.4,0,2,1.2,2,2.8V19h4v-7.4C19,7.9,17.1,6.2,14.6,6.2z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M17.316,6.246c0.008,0.162,0.011,0.326,0.011,0.488c0,4.99-3.797,10.742-10.74,10.742c-2.133,0-4.116-0.625-5.787-1.697c0.296,0.035,0.596,0.053,0.9,0.053c1.77,0,3.397-0.604,4.688-1.615c-1.651-0.031-3.046-1.121-3.526-2.621c0.23,0.043,0.467,0.066,0.71,0.066c0.345,0,0.679-0.045,0.995-0.131c-1.727-0.348-3.028-1.873-3.028-3.703c0-0.016,0-0.031,0-0.047c0.509,0.283,1.092,0.453,1.71,0.473c-1.013-0.678-1.68-1.832-1.68-3.143c0-0.691,0.186-1.34,0.512-1.898C3.942,5.498,6.725,7,9.862,7.158C9.798,6.881,9.765,6.594,9.765,6.297c0-2.084,1.689-3.773,3.774-3.773c1.086,0,2.067,0.457,2.756,1.191c0.859-0.17,1.667-0.484,2.397-0.916c-0.282,0.881-0.881,1.621-1.66,2.088c0.764-0.092,1.49-0.293,2.168-0.594C18.694,5.051,18.054,5.715,17.316,6.246z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://Instargram.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M18.94586,6.28931a6.60561,6.60561,0,0,0-.41833-2.18463,4.41189,4.41189,0,0,0-1.03809-1.59412,4.41189,4.41189,0,0,0-1.59412-1.03809,6.60561,6.60561,0,0,0-2.18463-.41833C12.75073,1.01038,12.44427,1,10,1s-2.75073.01038-3.71069,0.05414a6.60561,6.60561,0,0,0-2.18463.41833A4.41189,4.41189,0,0,0,2.51056,2.51056,4.41189,4.41189,0,0,0,1.47247,4.10468a6.60561,6.60561,0,0,0-.41833,2.18463C1.01038,7.24927,1,7.55573,1,10s0.01038,2.75073.05414,3.71069a6.60561,6.60561,0,0,0,.41833,2.18463,4.41189,4.41189,0,0,0,1.03809,1.59412,4.41109,4.41109,0,0,0,1.59412,1.03809,6.60561,6.60561,0,0,0,2.18463.41833C7.24927,18.98969,7.55573,19,10,19s2.75073-.01031,3.71069-0.05414a6.60561,6.60561,0,0,0,2.18463-.41833,4.60208,4.60208,0,0,0,2.6322-2.6322,6.60561,6.60561,0,0,0,.41833-2.18463C18.98962,12.75073,19,12.44427,19,10S18.98962,7.24927,18.94586,6.28931Zm-1.61993,7.34747a4.97824,4.97824,0,0,1-.30994,1.67114A2.98017,2.98017,0,0,1,15.30792,17.016a4.9786,4.9786,0,0,1-1.67114.30994C12.68787,17.3692,12.40326,17.37836,10,17.37836s-2.68787-.00916-3.63678-0.05243A4.9786,4.9786,0,0,1,4.69208,17.016a2.78769,2.78769,0,0,1-1.03485-.67322A2.78769,2.78769,0,0,1,2.984,15.30792a4.97824,4.97824,0,0,1-.30994-1.67114C2.6308,12.68774,2.62164,12.40314,2.62164,10s0.00916-2.68774.05243-3.63678A4.9786,4.9786,0,0,1,2.984,4.69208a2.78769,2.78769,0,0,1,.67322-1.03485A2.78769,2.78769,0,0,1,4.69208,2.984a4.9786,4.9786,0,0,1,1.67114-.30994C7.31226,2.6308,7.59686,2.62164,10,2.62164s2.68774,0.00916,3.63678.05243a4.9786,4.9786,0,0,1,1.67114.30994,2.78769,2.78769,0,0,1,1.03485.67322A2.78769,2.78769,0,0,1,17.016,4.69208a4.9786,4.9786,0,0,1,.30994,1.67114c0.04327,0.949.05243,1.2337,0.05243,3.63678S17.3692,12.68774,17.32593,13.63678ZM10,5.37836A4.62164,4.62164,0,1,0,14.62164,10,4.62169,4.62169,0,0,0,10,5.37836ZM10,13a3,3,0,1,1,3-3A3,3,0,0,1,10,13Zm5.88422-7.8042a1.08,1.08,0,1,1-1.08-1.08A1.08,1.08,0,0,1,15.88422,5.1958Z"
+                            transform="translate(-1 -1)"></path>
+                    </svg>
+                </a>
+                <a href="https://wechat.com" target="_blank">
+                    <svg viewBox="0 0 24 24" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M21.502 19.525C23.026 18.42 24 16.787 24 14.971c0-3.326-3.237-6.023-7.229-6.023s-7.229 2.697-7.229 6.023c0 3.327 3.237 6.024 7.229 6.024.825 0 1.621-.117 2.36-.33l.212-.032c.139 0 .265.043.384.111l1.583.914.139.045a.241.241 0 0 0 .241-.241l-.039-.176-.326-1.215-.025-.154a.48.48 0 0 1 .202-.392zM8.675 2.297C3.884 2.297 0 5.533 0 9.526c0 2.178 1.168 4.139 2.997 5.464a.575.575 0 0 1 .243.471l-.03.184-.391 1.458-.047.211c0 .16.13.29.289.29l.168-.054 1.899-1.097a.908.908 0 0 1 .46-.133l.255.038c.886.255 1.842.397 2.832.397l.476-.012a5.586 5.586 0 0 1-.291-1.771c0-3.641 3.542-6.593 7.911-6.593l.471.012c-.653-3.453-4.24-6.094-8.567-6.094zm5.686 11.711a.964.964 0 1 1 .001-1.927.964.964 0 0 1-.001 1.927zm4.82 0a.964.964 0 1 1 0-1.928.964.964 0 0 1 0 1.928zM5.783 8.369a1.156 1.156 0 1 1 0-2.312 1.156 1.156 0 0 1 0 2.312zm5.783 0a1.156 1.156 0 1 1 0-2.312 1.156 1.156 0 0 1 0 2.312z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://genshin.com" target="_blank">
+                    <svg viewBox="0 0 20 20" class="css-1oqj7iv" style="width: 45px; height: 35px;">
+                        <path
+                            d="M9.846.302C4.466.302.104 4.663.104 10.043s4.362 9.742 9.742 9.742c5.38 0 9.743-4.362 9.743-9.742 0-5.38-4.363-9.741-9.743-9.741zM13.155 10.8c-.241 0-.801.015-.801-.616 0-.515.223-.67.485-.861.223-.164 1.547-.57 1.547-1.664 0-.878-.893-1.554-1.809-1.554-1.084 0-1.914.83-1.914 1.338v5.508c0 1.447-1.925 2.71-3.54 2.71-1.525 0-3.494-1.078-3.494-3.233 0-2.446 2.57-3.123 2.94-3.123.241 0 .8-.016.8.615 0 .514-.223.67-.485.86-.221.164-1.547.57-1.547 1.663 0 .877.894 1.553 1.809 1.553 1.085 0 1.917-.83 1.917-1.338L9.062 7.15c0-1.447 1.924-2.71 3.539-2.71 1.522 0 3.494 1.078 3.494 3.233 0 2.45-2.57 3.127-2.94 3.127z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+           <div class="col-lg-4">
+  <div class="input-group mb-3">
+
+    
+    <div class="input-group-prepend">
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">App</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Google Play</a>
+          <a class="dropdown-item" href="#">App Store</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="input-group-append">
+      <a href="tel:+85512345678" class="btn btn-outline-dark">
+        <i class="fas fa-phone mr-1"></i> 099138712
+      </a>
+    </div>
+
+    
+    <div class="input-group-prepend">
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">$$</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Dollar USD ($)</a>
+          <a class="dropdown-item" href="#">Riel (៛)</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="input-group-prepend">
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Language</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Khmer</a>
+          <a class="dropdown-item" href="#">English</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Hidden Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">New Developments</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Condo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Borey</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Land</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Commercial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">New</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <button class="btn btn-outline-primary mx-2">Profile</button>
+            <button class="btn btn-outline-secondary">Settings</button>
+        </div>
+    </nav>
+
+<!-- pics -->
+    <a href="#" style="margin: 10px; display: inline-block;">New Development > </a>
+    <a href="#">Phnom Phenh > </a>
+    <a href="#">Chamkarmon > </a>
+    <a href="#">Tonle Basak </a>
+    <div class="container1">
+        <div class="big-pic">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2022-10/copy-of-wechatimg27-thumbnail-750x562-70.jpeg" alt="Big picture">
+        </div>
+        <div class="small-pics">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2025-04/2025-03-construction-in-march_01_06_19_09-thumbnail-400x300-70.jpeg" alt="Small slide 1">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2022-10/copy-of-wechatimg28-thumbnail-400x300-70.jpeg" alt="Small slide 2">
+        </div>
+    </div>
+
+
+
+    <hr>
+    <div class="request-box" style="
+            position: absolute;
+            right: 20px;
+            top: 150px;
+            width: 250px;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;">
+        <h3>Request Details</h3>
+        <form>
+            <input type="text" placeholder="Name" style="width:100%;margin-bottom:8px;"><br>
+            <input type="text" placeholder="Phone" style="width:100%;margin-bottom:8px;"><br>
+            <input type="email" placeholder="Email" style="width:100%;margin-bottom:8px;"><br>
+            <textarea placeholder="Message" style="width:100%;height:60px;margin-bottom:8px;"></textarea><br>
+            <button style="width:100%;background:#8BC34A;color:#fff;padding:10px;border:none;">Submit</button>
+        </form>
+
+
+
+    </div>
+    <h2 style="margin: 20; ">J Tower 3 Condominium</h2>
+    <h6 style="margin: 20; ">Location : Tonle Bassac, Chamkarmon, Phnom Penh</h6>
+    <div style="display: flex; align-items: center; gap: 0px;">
+        <h6 style="margin: 20;">For Sale :</h6>
+        <h2 style="margin: 0; color: #8BC34A    ;">$33,000</h2>
+    </div>
+
+
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="padding-left: 100   ;">15%</div>
+            <div class="card-body">
+
+                <p class="card-text">Downpayment Ratio</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="padding-left: 100   ;">70%</div>
+            <div class="card-body">
+
+                <p class="card-text">Sold Rate</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="padding-left: 100   ;">5%</div>
+            <div class="card-body">
+
+                <p class="card-text">Construction Progress</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header" style="padding-left: 100   ;">2028</div>
+            <div class="card-body">
+
+                <p class="card-text">Complettion Year</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h3 style="margin: 30; ">J Tower 3 Condominium</h3>
+
+    <div class="row">
+        <div class="col-lg-7 ">
+            <p style="margin: 20;">J Tower 3 is an exceptional residential property brought to you by a renowned
+                developer with a proven
+                track record of success. With three previous projects successfully completed.</p>
+
+            <p style="margin: 20;">Situated in Tonle Bassac, Khan Chomkarmon, in the vibrant city of Phnom Penh, this
+                property combines
+                luxurious amenities with a prime location to offer an unrivaled living experience.</p>
+
+            <p style="margin: 20;">J Tower 3 stands tall with its magnificent architecture, consisting of 2 underground
+                floors and 77 floors
+                above ground, reaching a soaring height of 310.5m. The building encompasses a total area of 98480 m2,
+                constructed with a sturdy reinforced concrete structure, ensuring durability and safety for its
+                residents.</p>
+
+            <p style="margin: 20;">The developer's attention to detail is evident in the 360 units' design at J Tower 3.
+                Each unit is
+                thoughtfully crafted as a 3-bedroom residence, offering two exclusive area options of 166m2 and 178m2.
+                The developer's commitment to quality and luxury is reflected in every aspect of these elegant and
+                modern living spaces.</p>
+
+            <p style="margin: 20;">Parking is made convenient with 252 rental parking lots available within the
+                premises. Additionally,
+                residents can enjoy smooth and efficient vertical transportation facilitated by the eight elevators
+                installed throughout the building.</p>
+
+            <p style="margin: 20;">J Tower 3 presents a wealth of luxurious facilities spread across various floors.
+                From the main floor on
+                the 50th floor, with its cafe and lounge, wine cooler, mini shop, and business room, to the sky pool and
+                sky bar on the 77th floor, offering breathtaking views of the surrounding cityscape, every amenity has
+                been carefully designed to exceed residents' expectations. The 49th floor boasts an inner pool, kids
+                pool, sauna, public bath, and spa, ensuring residents can relax and rejuvenate.</p>
+
+            <p style="margin: 20;">The 29th floor features a swimming pool and fitness gym, catering to the residents'
+                active lifestyle. For
+                families, the 11th floor offers a dedicated Kids' Play Space, Pool Bar (Billiard Hall), and Table Tennis
+                Hall.</p>
+
+            <p style="margin: 20;">Nature enthusiasts can enjoy the outdoor park on the 28th floor, providing a serene
+                environment amidst
+                the bustling city. For panoramic views of the city skyline, the 78th floor features an observation deck
+                where residents can take in the beauty of Phnom Penh. Other convenient facilities include a laundry
+                service on the 28th floor and a garbage station on every floor. </p>
+        </div>
+    </div>
+    <br><hr>
+    </div>
+
+        <div class="container">
+         <h2>Project Overview</h2>
+         <br>
+        <div class="row">
+           
+            <div class="col-lg-4 ">
+                 <h6>Total units : 360</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Unit type : Condo</h6>  
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Beds in a unit : 3 to 3</h6>
+            </div>
+            <br><br>
+             <div class="col-lg-4 ">
+                 <h6>Floor areas : 166 m² to 178 m²</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Floors : 77</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Title : Hard Title</h6>
+            </div>
+
+
+
+             <br><br>
+             <div class="col-lg-4 ">
+                 <h6>Construction area : 1993 sqm</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Listed : 21/02/2023</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Updated : 25/06/2025</h6>
+            </div>
+             <br><br>
+             <div class="col-lg-4 ">
+                 <h6>Property ID : 226757</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Original ID : J Tower 3</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Decoration type : Modern Minimalistic Skyscraper</h6>
+            </div>
+             <br><br>
+             <div class="col-lg-4 ">
+                 <h6>Agency : </h6>
+                    <a href="#">Tanichu Assetment.Co.,Ltd</a>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Structure : Concrete, Steel, Glass</h6>
+            </div>
+            </div>
+            
+            </div>
+
+
+
+
+
+            <br><br>
+
+    <div class="container">
+         <h2>Highlights</h2>
+         <br>
+        <div class="row">
+           
+            <div class="col-lg-4 ">
+                 <h6>Brand Developer</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>Bank Loans Available</h6>
+            </div>
+            <div class="col-lg-4 ">
+                <h6>High Appreciation Value</h6>
+            </div>
+            </div>
+            </div>
+
+
+            <hr>
+            <br>
+
+
+
+    <div class="container">
+         <h2>Property Features</h2>
+         <br>
+        <div class="row">
+            
+            <div class="col-lg-6 ">
+               
+                <ul class="list-group">
+                    <li class="list-group-item">Air Conditioning</li>
+                    <li class="list-group-item list-group-item-secondary">Balcony</li>
+                    <li class="list-group-item">Fully Furnished</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 ">
+                <ul class="list-group">
+                    <li class="list-group-item">Internet / Wifi</li>
+                    <li class="list-group-item list-group-item-secondary">Pay TV</li>
+                    <li class="list-group-item">Serviced Property</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+    <div class="container">
+         <h2>Security</h2>
+         <br>
+        <div class="row">
+            
+            <div class="col-lg-6 ">
+               
+                <ul class="list-group">
+                    <li class="list-group-item">Alarm System</li>
+                    <li class="list-group-item list-group-item-secondary">Fire Alarm</li>
+                    <li class="list-group-item">Fire sprinkler system</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 ">
+                <ul class="list-group">
+                    <li class="list-group-item">Reception 24/7</li>
+                    <li class="list-group-item list-group-item-secondary">Video Security</li>
+                    <li class="list-group-item">Camera Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+     <div class="container">
+         <h2>Amenities</h2>
+         <br>
+        <div class="row">
+            
+            <div class="col-lg-6 ">
+               
+                <ul class="list-group">
+                    <li class="list-group-item">Car Parking</li>
+                    <li class="list-group-item list-group-item-secondary">Commercial area</li>
+                    <li class="list-group-item">Common Area</li>
+                    <li class="list-group-item list-group-item-secondary">Garden</li>
+                    <li class="list-group-item">Gym/Fitness Center</li>
+                    <li class="list-group-item list-group-item-secondary">Lift / Elevator</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 ">
+                <ul class="list-group">
+                    <li class="list-group-item">Non-Flooding</li>
+                    <li class="list-group-item list-group-item-secondary">Playground</li>
+                    <li class="list-group-item">Sauna</li>
+                    <li class="list-group-item list-group-item-secondary">Sports Facilities</li>
+                    <li class="list-group-item">Swimming Pool</li>
+                    <li class="list-group-item list-group-item-secondary">Backup Electricity / Generator</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <hr>
+    <br>
+    <div class="container">
+         <h2>View</h2>
+         <br>
+        <div class="row">
+            
+            <div class="col-lg-6 ">
+               
+                <ul class="list-group">
+                    <li class="list-group-item">City Views</li>
+                    <li class="list-group-item list-group-item-secondary">Pool Views</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 ">
+                <ul class="list-group">
+                    <li class="list-group-item">River Views</li>
+                    <li class="list-group-item list-group-item-secondary">...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+
+
+    <h2 style="margin: 20;">Explore properties in J Tower 3 Condominium</h2>
+    <!-- Other choise -->
+    <a href="#" class="text-decoration-none text-dark">
+        <div class="d-flex border rounded p-3 mb-4 shadow-sm align-items-center" style="cursor: pointer;">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2022-10/p1655133-thumbnail-1040x780-70.jpeg" alt="Image 1"
+                style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;">
+            <div>
+                <h5>J Tower 3 Bedroom Unit</h5>
+                <p class="mb-0">3-bedroom, 3-bathroom, 178m2, East, Price : $330,000</p>
+            </div>
+        </div>
+    </a>
+
+
+    <a href="#" class="text-decoration-none text-dark">
+        <div class="d-flex border rounded p-3 mb-4 shadow-sm align-items-center" style="cursor: pointer;">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2025-04/studio-room-showroom-5896722-1-thumbnail-1040x780-70.jpeg" alt="Image 2"
+                style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;">
+            <div>
+                <h5>3 Bedroom corner J Tower</h5>
+                <p class="mb-0">3-bathroom, 2-Bathroom, 166m2, North/East, Price : $340,000</p>
+            </div>
+        </div>
+    </a>
+
+
+    <a href="#" class="text-decoration-none text-dark">
+        <div class="d-flex border rounded p-3 mb-4 shadow-sm align-items-center" style="cursor: pointer;">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2025-03/dsc07076-thumbnail-1040x780-70.jpeg" alt="Image 3"
+                style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;">
+            <div>
+                <h5>3 Bedroom Condo for Resale in J Tower 3</h5>
+                <p class="mb-0">3-bathroom, 2-Bathroom, 166m2, Floor 12th, Price : $364,000</p>
+            </div>
+        </div>
+    </a>
+
+
+    <a href="#" class="text-decoration-none text-dark">
+        <div class="d-flex border rounded p-3 mb-4 shadow-sm align-items-center" style="cursor: pointer;">
+            <img src="https://images.realestate.com.kh/__sized__/listings/2025-06/img_9409-2-thumbnail-1040x780-70.jpeg" alt="Image 4"
+                style="width: 100px; height: 100px; object-fit: cover; margin-right: 15px;">
+            <div>
+                <h5>3 Bedroom Condo for Resale in J Tower - 70th floors</h5>
+                <p class="mb-0">3-bedroom, 178m2, Floor 70th , Price : $599,000</p>
+            </div>
+        </div>
+    </a>
+
+
+
+
+
+
+    <!-- Map -->
+    <div class="container my-5">
+        <h3>Our Location</h3>
+        <div class="map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=103.851959%2C1.290270%2C103.853959%2C1.292270&layer=mapnik" width="100%" height="300" frameborder="0"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Next page -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Cambodia House</footer>
+
+</body>
+
+</html>

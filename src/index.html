@@ -22,7 +22,7 @@
     <link
 =======
     <script src="./components/fiveCards.js"></script>
-    <script src="./components/stickyActionBar.js"></script>
+    <script src="./components/sticky.js"></script>
     <script src="./components/footer.js"></script>
     <script src="./components/fiveVideos.js"></script>
 <<<<<<< HEAD
@@ -33,83 +33,7 @@
     />
   </head>
   <body>
-    <!-- form login -->
-    <div
-      class="modal fade"
-      id="loginModal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">
-              Login with Password
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="loginInput" class="form-label"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="loginInput"
-                  placeholder="Phone number, username or email address"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="loginPassword" class="form-label"></label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="loginPassword"
-                  placeholder="Password"
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                class="btn btn-danger w-100 mb-2"
-                style="background-color: #dc3545; color: white"
-              >
-                Login
-              </button>
-              <a
-                href="#"
-                class="text-decoration-none text-primary mb-2 d-block text-center"
-                >Forget Password?</a
-              >
-              <div class="text-center mb-2">or</div>
-              <button
-                type="button"
-                class="btn btn-primary w-100 mb-2"
-                style="background-color: #3b5998; color: white"
-              >
-                <i class="bi bi-facebook"></i> Sign in with Facebook
-              </button>
-              <p class="text-center mb-0">
-                Don't have an account?
-                <a href="#" class="text-decoration-none text-primary"
-                  >Register here</a
-                >
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <header class="header">
+     <header class="header">
       <!-- Top Bar -->
       <div class="container top-bar">
         <div class="social-links">
@@ -145,127 +69,24 @@
 
       <!-- Menu  -->
       <div class="nav-container">
-        <span class="logo-text">realestate.com.kh</span>
-
-        <nav>
-          <ul class="nav-menu">
-            <li class="dropdown">
-              <span>Buy</span>
-              <div class="dropdown-content">
-                <a href="#">House</a>
-                <a href="#">Apartment</a>
-                <a href="#">Land</a>
-                <a href="#">Shophouse</a>
-                <a href="#">Condo</a>
-                <a href="#">Borey</a>
-
-                <a href="#">Commercial</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>Rent</span>
-              <div class="dropdown-content">
-                <a href="#">House</a>
-                <a href="#">Apartment</a>
-                <a href="#">Land</a>
-                <a href="#">Shophouse</a>
-                <a href="#">Condo</a>
-                <a href="#">Borey</a>
-
-                <a href="#">Commercial</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>New Developments</span>
-              <div class="dropdown-content">
-                <a href="#">House</a>
-                <a href="#">Apartment</a>
-                <a href="#">Land</a>
-                <a href="#">Shophouse</a>
-                <a href="#">Condo</a>
-                <a href="#">Borey</a>
-                <a href="#">Commercial</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>Condo</span>
-              <div class="dropdown-content">
-                <a href="#">Phnom Penh</a>
-                <a href="#">Sihanoukville</a>
-                <a href="#">Siem Reap</a>
-                <a href="#">Chamkarmorn</a>
-                <a href="#">Daun Penh</a>
-                <a href="#">Toul Kork</a>
-                <a href="#">7 Makara</a>
-                <a href="#">Sen Sok</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>Boreys</span>
-              <div class="dropdown-content">
-                <a href="#">Phnom Penh</a>
-                <a href="#">Sihanoukville</a>
-                <a href="#">Siem Reap</a>
-                <a href="#">Chamkarmorn</a>
-                <a href="#">Daun Penh</a>
-                <a href="#">Toul Kork</a>
-                <a href="#">7 Makara</a>
-                <a href="#">Sen Sok</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>Land</span>
-              <div class="dropdown-content">
-                <a href="#">Phnom Penh</a>
-                <a href="#">Sihanoukville</a>
-                <a href="#">Siem Reap</a>
-                <a href="#">Chamkarmorn</a>
-                <a href="#">Daun Penh</a>
-                <a href="#">Toul Kork</a>
-                <a href="#">7 Makara</a>
-                <a href="#">Sen Sok</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>Commercial</span>
-              <div class="dropdown-content">
-                <a href="#">Phnom Penh</a>
-                <a href="#">Sihanoukville</a>
-                <a href="#">Siem Reap</a>
-                <a href="#">Chamkarmorn</a>
-                <a href="#">Daun Penh</a>
-                <a href="#">Toul Kork</a>
-                <a href="#">7 Makara</a>
-                <a href="#">Sen Sok</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>News</span>
-              <div class="dropdown-content">
-                <a href="#">Cambodia Investment Guide</a>
-                <a href="#">Foreign Property Ownership</a>
-                <a href="#">Buying Advice and Tips</a>
-                <a href="#">Guide to Battambang</a>
-                <a href="#">Guide to Phnom Penh</a>
-                <a href="#">Guide to Siem Reap</a>
-                <a href="#">Guide to Sihanoukville</a>
-                <a href="#">Guide to Kampot</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <span>More</span>
-              <div class="dropdown-content">
-                <a href="#">Cambodia Investment Guide</a>
-                <a href="#">Foreign Property Ownership</a>
-                <a href="#">Buying Advice and Tips</a>
-                <a href="#">Guide to Battambang</a>
-                <a href="#">Guide to Phnom Penh</a>
-                <a href="#">Guide to Siem Reap</a>
-                <a href="#">Guide to Sihanoukville</a>
-                <a href="#">Guide to Kampot</a>
-              </div>
-            </li>
-          </ul>
+        <div class="logo">
+          <img
+            src="https://www.realestate.com.kh/static/img/logo.svg"
+            alt="Logo"
+            height="32px"
+          />
+          <!-- <span class="logo-text">realestate.com.kh</span> -->
+        </div>
+        <nav class="nav-links">
+          <a href="#" class="nav-item">Buy</a>
+          <a href="#" class="nav-item">Rent</a>
+          <a href="#" class="nav-item">New Developments</a>
+          <a href="#" class="nav-item">Condo</a>
+          <a href="#" class="nav-item">Borey</a>
+          <a href="#" class="nav-item">Land</a>
+          <a href="#" class="nav-item">Commercial</a>
+          <a href="#" class="nav-item">News</a>
+          <a href="#" class="nav-item">More</a>
         </nav>
         <div cl ass="auth-buttons">
           <!-- Login Button trigger modal -->
@@ -284,33 +105,32 @@
         </div>
       </div>
     </header>
-    <!-- banner -->
-    <div
-      class="banner"
-      style="
-        background-image: url('./asset/img/size 1280 x 704.png');
-        background-size: cover;
-        background-position: center;
-      "
-    >
-      <div
-        class="banner-image"
-        style="background: rgba(0, 0, 0, 0.4); min-height: 320px"
-      >
-        <div class="search-section">
-          <h3 style="color: #fff">Find Cambodia Real Estate</h3>
-          <div class="search-options">
-            <button class="active">Buy</button>
-            <button>Rent</button>
-            <button>Sell</button>
-          </div>
-          <input
-            type="text"
-            class="search-bar"
-            placeholder="Location, project or agency name"
-          />
-          <div class="concierge" style="color: #fff">
-            Try our free concierge service
+
+    <sticky-bar></sticky-bar>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="container banner-content">
+        <div class="banner-image">
+          <img src="./asset/img/website-hero-banner-ads-mobile-320-x-176-eng.png" alt="">
+        </div>
+        
+      </div>
+      <div class="container search-bar">
+        <div class="search-box">
+          <div class="search-form">
+            <h3 class="search-title">Find Cambodia Real Estate</h3>
+            <div class="search-buttons">
+              <button class="search-btn active">Buy</button>
+              <button class="search-btn">Rent</button>
+              <button class="search-btn">Sell</button>
+              <input
+                type="text"
+                placeholder="Location, project or agency name"
+                class="search-input"
+              />
+              <button class="search-submit" type="submit">submit</button>
+            </div>
           </div>
 <<<<<<< HEAD
 =======
@@ -364,35 +184,44 @@
 
     <main
       class="container"
-      style="display: block; max-width: 1280px; margin: 0 auto; padding: 20px"
-    >
+      style="display: block; max-width: 1280px; margin: 0 auto; padding: 20px">
       <div id="carousel-container"></div>
-
-      <five-videos src="./data/knowCambodia.json"></five-videos>
       <div>
         <h3>Popular Location</h3>
         <five-cards src="./data/sectionOne.json"></five-cards>
       </div>
       <div>
         <h3>Featured New Developments</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionTwo.json"></five-cards>
       </div>
       <div>
         <h3>Featured Serviced Apartments</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionThree.json"></five-cards>
       </div>
       <div>
         <h3>Featured Boreys</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionFour.json"></five-cards>
       </div>
       <div>
         <h3>Latest Properties for Sale</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionFive.json"></five-cards>
       </div>
       <div>
         <h3>Properties for Sale Under Market Value</h3>
-        <five-cards src="./data/sectionOne.json"></five-cards>
+        <five-cards src="./data/sectionSix.json"></five-cards>
       </div>
+      <div>
+        <h3>Latest Properties for Rent</h3>
+        <five-videos src="./data/sectionSeven.json"></five-videos>
+        </div>
+        <div>
+            <h3>Serviced apartments for rent</h3>
+            <five-videos src="./data/sectionEight.json"></five-videos>
+        </div>
+        <div>
+            <h3>Villas for sale and rent</h3>
+            <five-videos src="./data/sectionNine.json"></five-videos>
+        </div>
     </main>
     <footer-compo></footer-compo>
 

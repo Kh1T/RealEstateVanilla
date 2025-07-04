@@ -1,38 +1,56 @@
 [
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/phnom-penh_tTVbMtj-thumbnail-400x300-70.jpg",
+    "title": "Phnom Penh",
+    "sale": "7k",
+    "rent": "27k"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "Modern Loft",
-    "price_from": "$1,200",
-    "location": "Jakarta"
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70621-pm-thumbnail-400x300.png",
+    "title": "Chamkarmon",
+    "sale": "1k",
+    "rent": "16k"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70902-pm-thumbnail-400x300.png",
+    "title": "Daun Penh",
+    "sale": "349",
+    "rent": "3k"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71238-pm-thumbnail-400x300.png",
+    "title": "BKK 1",
+    "sale": "309",
+    "rent": "6k"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "Modern Loft",
-    "price_from": "$1,200",
-    "location": "Jakarta"
+    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71657-pm-thumbnail-400x300.png",
+    "title": "Russia Market",
+    "sale": "103",
+    "rent": "2"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
-    "title": "City Apartment",
-    "price_from": "$950",
-    "location": "Singapore"
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/sihanoukville_SiXdDxt-thumbnail-400x300-70.jpg",
+    "title": "Sihanoukville",
+    "sale": "194",
+    "rent": "51"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/kampot_XPGpurc-thumbnail-400x300-70.jpg",
+    "title": "Kampot",
+    "sale": "3k",
+    "rent": "62"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/siem-reap_DV5qPnn-thumbnail-400x300-70.jpg",
+    "title": "Siem Reap",
+    "sale": "3k",
+    "rent": "4k"
+  },
+  {
+    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/battambang_X4NEqrL-thumbnail-400x300-70.jpg",
+    "title": "Battambang",
+    "sale": "35",
+    "rent": "3"
   }
 ]
