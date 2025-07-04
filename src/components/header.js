@@ -38,7 +38,10 @@ class HeaderNav extends HTMLElement {
 
     <!-- Menu  -->
     <div class="nav-container">
-        <span class="logo-text">realestate.com.kh</span>
+        <img
+          width="232px"
+          src="https://www.realestate.com.kh/static/img/logo.svg"
+        />
 
         <nav>
         <ul class="nav-menu">
