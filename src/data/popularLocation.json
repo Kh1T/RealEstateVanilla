@@ -3,36 +3,36 @@
     "location": "Phnom Penh",
     "sale": 50,
     "rent": 25,
-    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/phnom-penh_tTVbMtj-thumbnail-400x300-70.jpg"
+    "image": "../src/assets/popLoc/1.png"
   },
   {
     "location": "Chamkarmon",
     "sale": 75,
     "rent": 32,
-    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70621-pm-thumbnail-400x300.png"
+    "image": "../src/assets/popLoc/2.png"
   },
   {
     "location": "Daun Penh",
     "sale": 80,
     "rent": 45,
-    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-70902-pm-thumbnail-400x300.png"
+    "image": "../src/assets/popLoc/3.png"
   },
   {
     "location": "BKK 1",
     "sale": 90,
     "rent": 55,
-    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71238-pm-thumbnail-400x300.png"
+    "image": "../src/assets/popLoc/4.png"
   },
   {
     "location": "Russian Market",
     "sale": 60,
     "rent": 35,
-    "image": "https://images.realestate.com.kh/__sized__/files/2023-05/screenshot-2023-05-01-at-71657-pm-thumbnail-400x300.png"
+    "image": "../src/assets/popLoc/5.png"
   },
   {
     "location": "Kampot",
     "sale": 70,
     "rent": 40,
-    "image": "https://images.realestate.com.kh/__sized__/files/2019-07/kampot_XPGpurc-thumbnail-400x300-70.jpg"
+    "image": "../src/assets/popLoc/6.png"
   }
 ]

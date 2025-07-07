@@ -1,36 +1,36 @@
 [
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_9991-3-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/1.png",
     "title": "Warehouse for Rent – Spacious and Well-Located",
     "price_from": "$2,500",
     "location": "Phsar Depou I, Toul Kork, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_9645-2-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/2.png",
     "title": "Shophouse for rent in Sen Sok",
     "price_from": "$2,500",
     "location": "Phnom Penh Thmey, Sen Sok, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0044-2-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/3.png",
     "title": "Shop for Rent in Prime Location – Perfect for Living or Business",
     "price_from": "$3,800",
     "location": "Chey Chumneah, Daun Penh, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/bkk3_area_service_apartment_1_bedroom_with_gym_for_rent_1370371-3-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/4.png",
     "title": "Fully furnished apartment for Rent I Hour Heng Apartment",
     "price_from": "$420",
     "location": "BKK 3, Chamkarmon, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_20250627_144443-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/5.png",
     "title": "Building for Rent in Prime Location ",
     "price_from": "$10,000",
     "location": "Phnom Penh Thmey, Sen Sok, Phnom Penh"
   },
   {
-    "image": "https://images.realestate.com.kh/__sized__/listings/2025-06/img_0096-copy-thumbnail-400x300-70.jpeg",
+    "image": "../src/assets/section5/6.png",
     "title": "City Apartment",
     "price_from": "$950",
     "location": "Singapore"
